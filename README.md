@@ -1,2 +1,2 @@
 # snehi.github.io
-Personal Website
+Happily created with Claude
