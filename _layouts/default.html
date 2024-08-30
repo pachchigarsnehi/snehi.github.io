@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <header>
+        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author }}" class="profile-picture">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/essays' | relative_url }}">Essays</a></li>
+            <li><a href="{{ '/tech_articles' | relative_url }}">Technical Articles</a></li>
+            <li><a href="{{ '/resume' | relative_url }}">Resume</a></li>
+            <li><a href="{{ '/thoughts' | relative_url }}">Thoughts</a></li>
+            <li><a href="{{ '/pictures' | relative_url }}">Pictures</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
