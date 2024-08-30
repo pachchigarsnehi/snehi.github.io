@@ -2,7 +2,7 @@
 title: Snehi Pachchigar
 description: Your personal website and blog
 url: "https://pachchigarsnehi.github.io"
-baseurl: ""  # Leave this empty
+baseurl: "/snehi.github.io"   # Leave this empty
 
 # Build settings
 markdown: kramdown
