@@ -1,8 +1,8 @@
 # _config.yml
-title: Your Name
+title: Snehi Pachchigar
 description: Your personal website and blog
 url: "https://pachchigarsnehi.github.io"
-baseurl: ""
+baseurl: ""  # Leave this empty
 
 # Build settings
 markdown: kramdown
@@ -44,7 +44,7 @@ defaults:
       layout: "tech_article"
 
 # Custom variables
-author: Your Name
-email: your.email@example.com
-twitter_username: yourtwitterhandle
+author: Snehi Pachchigar
+email: snehipachchigar@gmail.com
+twitter_username: https://twitter.com/snehi_20
 github_username:  pachchigarsnehi
