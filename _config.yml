@@ -1,1 +1,50 @@
+# _config.yml
+title: Your Name
+description: Your personal website and blog
+url: "https://pachchigarsnehi.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Theme settings
 theme: minima
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  essays:
+    output: true
+  tech_articles:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "essays"
+    values:
+      layout: "essay"
+  - scope:
+      path: ""
+      type: "tech_articles"
+    values:
+      layout: "tech_article"
+
+# Custom variables
+author: Your Name
+email: your.email@example.com
+twitter_username: yourtwitterhandle
+github_username:  pachchigarsnehi
