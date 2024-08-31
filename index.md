@@ -5,7 +5,7 @@ title: Welcome
 
 # Welcome to My Personal Website
 
-Hello! I'm [Your Name], and this is my personal corner of the internet. Here, you'll find my thoughts, essays, technical articles, and more.
+Hello! I'm Snehi, and this is my personal corner of the internet. Here, you'll find my thoughts, essays, technical articles, and more.
 
 ## Recent Posts
 
@@ -13,7 +13,7 @@ Hello! I'm [Your Name], and this is my personal corner of the internet. Here, yo
 - [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
-[View all posts](/blog)
+[View all posts]({{ '/blog' | relative_url }})
 
 ## Featured Essays
 
@@ -21,7 +21,7 @@ Hello! I'm [Your Name], and this is my personal corner of the internet. Here, yo
 - [{{ essay.title }}]({{ essay.url | relative_url }})
 {% endfor %}
 
-[View all essays](/essays)
+[View all essays]({{ '/essays' | relative_url }})
 
 ## Latest Technical Articles
 
@@ -29,4 +29,4 @@ Hello! I'm [Your Name], and this is my personal corner of the internet. Here, yo
 - [{{ article.title }}]({{ article.url | relative_url }})
 {% endfor %}
 
-[View all technical articles](/tech_articles)
+[View all technical articles]({{ '/tech_articles' | relative_url }})
