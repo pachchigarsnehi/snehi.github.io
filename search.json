@@ -1,0 +1,46 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for page in site.pages %}
+   {
+     {% if page.title != nil %}
+        "title"    : "{{ page.title | escape }}",
+        "category" : "{{ page.category }}",
+        "tags"     : "{{ page.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ page.date }}"
+     {% endif %}
+   } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for essay in site.essays %}
+    {
+      "title"    : "{{ essay.title | escape }}",
+      "category" : "essay",
+      "tags"     : "{{ essay.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ essay.url }}",
+      "date"     : "{{ essay.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for article in site.tech_articles %}
+    {
+      "title"    : "{{ article.title | escape }}",
+      "category" : "tech_article",
+      "tags"     : "{{ article.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ article.url }}",
+      "date"     : "{{ article.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
