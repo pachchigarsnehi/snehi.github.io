@@ -2,7 +2,6 @@
 layout: home
 title: Welcome
 ---
-<img src="{{ '/assets/images/profile-picture.jpg' | relative_url }}" alt="Your Name" class="profile-picture">
 
 # Welcome to My Personal Website
 
